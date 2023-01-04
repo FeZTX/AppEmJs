@@ -128,7 +128,7 @@ nav ul li a {
     transition: 0.2s;
 }
 
-/* Conteúdo do icone casa */
+/* Conteúdo da ToDoList */
 
 .mainRotina {
     display: flex;
@@ -140,7 +140,7 @@ nav ul li a {
 .containerTodo {
     display: flex;
     flex-direction: column;
-    border-radius: 5%;
+    border-radius: 25px;
     background-color: #cececa; 
     width: 500px;
     height: 500px;
@@ -159,7 +159,7 @@ nav ul li a {
 #criaTarefa input{
     border-style: none;
     padding: 8px;
-    border-radius: 3px;
+    border-radius: 10px;
     width: 70%;
     outline: none;
 }
@@ -168,7 +168,7 @@ nav ul li a {
     border-style: none;
     width: 10%;
     background-color: rgb(207, 255, 207);
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 #criaTarefa button:hover {
@@ -183,7 +183,7 @@ nav ul li a {
     height: 100%;
     background-color: #fff;
     margin-top: 3%;
-    border-radius: 1%;
+    border-radius: 10px;
     overflow: auto;
 }
 
@@ -198,7 +198,7 @@ nav ul li a {
     border-style: none;
     padding: 8px;
     background-color: rgb(255, 207, 207);
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .limpaTodo button:hover {
@@ -221,14 +221,33 @@ nav ul li a {
     width: 80%;
     align-self: center;
     align-items: center;
-    height: 50%;
-    min-height: 50%;
+    height: 135px;
+    min-height: 135px;
     font-size: 10.5pt;
-    border-radius: 20px;
+    border-radius: 10px;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 10px;
     background: linear-gradient(to bottom,#383838, rgb(97, 97, 97));
     transition: 1s;
+}
+
+#selecionahorario {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#selecionahorario input {
+    border-style: none;
+    padding: 8px;
+    font-size: 9pt;
+    border-radius: 10px;
+    width: 30%;
+    outline: none;
 }
 
 .divEstilo {
@@ -252,24 +271,6 @@ nav ul li a {
     filter: drop-shadow(0px 2px 0.5px rgb(0, 0, 0));
 }
     
-#selecionahorario {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding-top: 10px;
-    opacity: 0;
-    transition: 1s;
-}
-
-#selecionahorario input {
-    border-style: none;
-    padding: 8px;
-    font-size: 9pt;
-    border-radius: 3px;
-    width: 30%;
-    outline: none;
-}
 
 .span {
     margin-bottom: 2%;
@@ -355,3 +356,6 @@ nav ul li a {
       background-color: #00bfff;
     }
 }
+
+/* Mobile */
+
