@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <title>Teste de JS</title>
+</head>
+<body>
+    <section class="main">
+        <div class="menu">
+            <div class="containerBotao">
+                <div id="botao" onclick="mostra()">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <img id="imgLogo" src="IMG/Lobo.png" alt="Logo">
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li class="textIcons">
+                        <a onclick="sair()">
+                            <i class="fa-solid fa-check fa-2x"></i>
+                            <p class="textSeleciona">ToDoList</p>
+                        </a>
+                    </li>
+                    <li class="textIcons">
+                        <a>
+                            <i class="fa-solid fa-truck-fast fa-2x" ></i>
+                            <p class="textSeleciona">Caminhãozinho</p>
+                        </a>
+                    </li>
+                    <li class="textIcons">
+                        <a>
+                            <i class="fa-solid fa-shop fa-2x"></i>
+                            <p class="textSeleciona">Lojinha</p>
+                        </a>
+                    </li>
+                    <li class="textIcons">
+                        <a>
+                            <i class="fa-solid fa-landmark fa-2x"></i>
+                            <p class="textSeleciona">Tribunalzinho</p>
+                        </a>
+                    </li>
+                    <li class="textIcons">
+                        <a>
+                            <i class="fa-solid fa-barcode fa-2x"></i>
+                            <p class="textSeleciona">Códigozinho</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>  
+        </div>
+        <section class="conteudo">
+            <h1>Conteúdo</h1>
+            <div class="blocoUm"></div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
