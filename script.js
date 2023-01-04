@@ -59,22 +59,32 @@ function adicionarTarefa(tarefa) {
     let li = criaTagLi(tarefa);
     let span = criarSpan(tarefa);
     let btnRemove = btnRemoveItem(tarefa);
+    let alterarTarefa= btnAlteraTarefa(tarefa);
     let descript = criarElementoDesc(tarefa);
-    let divEstilo = criarDivStyle(tarefa);
+    let divEstilo = criarDivStyle();
+    let divBotoes = criarDivBotoes();
     addTarefa.value = "";
     date.value = "";
     time.value = "";
     div.appendChild(li)
-    li.appendChild(divEstilo)
+    li.appendChild(divBotoes);
+    li.appendChild(divEstilo);
     divEstilo.appendChild(descript);    
     li.appendChild(span);
-    divEstilo.appendChild(btnRemove);
+    divBotoes.appendChild(btnRemove);
+    divBotoes.appendChild(alterarTarefa);
 }
 
-function criarDivStyle(tarefa) {
+function criarDivStyle() {
     let divEstilo = document.createElement('div');
     divEstilo.classList.add('divEstilo')
     return divEstilo;
+}
+
+function criarDivBotoes() {
+    let divBotoes = document.createElement('div');
+    divBotoes.classList.add('divBotoes');
+    return divBotoes;
 }
 
 function criarElementoDesc(tarefa){
@@ -105,6 +115,14 @@ function btnRemoveItem(tarefa) {
     remove.classList?.add("buttonRemove");
     remove.setAttribute('onclick', 'removeParcial('+tarefa.id+')');
     return remove;
+}
+
+function btnAlteraTarefa(tarefa){
+    let altera = document.createElement("button");
+    altera.innerHTML = `<i class="fa-solid fa-pen" id="botaoCancela"><i>`
+    altera.classList?.add("buttonAtera");
+    altera.setAttribute('onclick', 'altera('+tarefa.desc+')');
+    return altera;
 }
 
 function removeParcial(tarefa) {
