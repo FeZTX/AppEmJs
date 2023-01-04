@@ -143,3 +143,10 @@ function empurra() {
     inputTarefa.style.marginBottom= "0px"
 }
 
+function voltar(){
+    setTimeout (() => {
+        window.location.href = 'index.html';
+    }, 400)
+    menu.classList?.add('goOut');
+}
+
